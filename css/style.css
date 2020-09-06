@@ -1,0 +1,143 @@
+*::before,
+*::after,
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #e5eff5;
+   font-family: "Karla", sans-serif;
+   font-weight: 400;
+   font-size: 1.6rem;
+   line-height: 1.6;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container {
+   max-width: 100%;
+   width: 768px;
+   margin: 0 auto;
+   padding: 15px;
+}
+
+.color-cyan {
+   color: #2ab2af;
+}
+
+.color-bright-yellow {
+   color: #c0df34;
+}
+
+.color-light-gray {
+   color: #e5eff5;
+}
+
+.color-grayis-blue {
+   color: #98a6bd;
+}
+
+.color-white {
+   color: #fff;
+}
+
+.heading-1 {
+   font-size: 3rem;
+}
+
+.heading-2 {
+   font-size: 2.5rem;
+}
+
+.heading-5 {
+   font-size: 1.8rem;
+}
+
+.heading-6 {
+   font-size: 1.6rem;
+}
+
+.card {
+   max-width: 670px;
+   margin: 0 auto;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+}
+.card__header {
+   padding: 35px 40px 40px;
+}
+.card__header h5 {
+   margin: 15px 0 10px;
+}
+.card__row {
+   display: flex;
+}
+@media screen and (max-width: 578px) {
+   .card__row {
+      flex-direction: column;
+   }
+}
+.card__column {
+   flex: 1;
+   color: #e6e6e6;
+   padding: 35px 40px;
+}
+.card__column--left {
+   background-color: #2ab2af;
+}
+.card__column--left h2 {
+   display: inline-block;
+}
+.card__column--left .price {
+   font-size: 3rem;
+   margin-right: 10px;
+   vertical-align: middle;
+}
+.card__column--left p {
+   font-weight: 700;
+}
+.card__column--left .btn-signup {
+   background-color: #c0df34;
+   color: #fff;
+   cursor: pointer;
+   outline: 0;
+   border: 1px solid transparent;
+   border-radius: 5px;
+   font-family: inherit;
+   font-size: 1.6rem;
+   font-weight: 700;
+   line-height: 1.2;
+   letter-spacing: 1px;
+   display: inline-block;
+   width: 100%;
+   padding: 15px;
+   margin-top: 30px;
+   text-align: center;
+   vertical-align: middle;
+   user-select: none;
+   -webkit-user-select: none;
+}
+.card__column--left .btn-signup:hover {
+   background-color: #d1df34;
+}
+.card__column--right {
+   background-color: #58cac8;
+}
+.card__column--right .features {
+   list-style-type: none;
+   line-height: 1.4;
+}
+.card__column h5 {
+   margin-bottom: 20px;
+}

@@ -1,0 +1,87 @@
+.card {
+   max-width: 670px;
+   margin: 0 auto;
+   background-color: $color-white;
+   border-radius: 10px;
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+
+   &__header {
+      padding: 35px 40px 40px;
+
+      h5 {
+         margin: 15px 0 10px;
+      }
+   }
+
+   &__row {
+      display: flex;
+
+      @media screen and (max-width: 578px) {
+         flex-direction: column;
+      }
+   }
+
+   &__column {
+      flex: 1;
+      color: $color-light;
+      padding: 35px 40px;
+
+      &--left {
+         background-color: $color-cyan;
+
+         h2 {
+            display: inline-block;
+         }
+
+         .price {
+            font-size: 3rem;
+            margin-right: 10px;
+            vertical-align: middle;
+         }
+
+         p {
+            font-weight: 700;
+         }
+
+         .btn-signup {
+            background-color: $color-bright-yellow;
+            color: $color-white;
+            cursor: pointer;
+            outline: 0;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 30px;
+            text-align: center;
+            vertical-align: middle;
+            user-select: none;
+            -webkit-user-select: none;
+
+            &:hover {
+               background-color: hsl(65, 73%, 54%);
+            }
+         }
+      }
+
+      &--right {
+         background-color: $color-light-cyan;
+
+         .features {
+            list-style-type: none;
+            line-height: 1.4;
+         }
+      }
+
+      h5 {
+         margin-bottom: 20px;
+      }
+   }
+}

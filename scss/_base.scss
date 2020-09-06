@@ -1,0 +1,43 @@
+// Color Variables
+$color-cyan: hsl(179, 62%, 43%);
+$color-bright-yellow: hsl(71, 73%, 54%);
+$color-light-gray: hsl(204, 43%, 93%);
+$color-grayis-blue: hsl(218, 22%, 67%);
+$color-light-cyan: hsl(179, 52%, 57%);
+$color-light: hsl(0, 0%, 90%);
+$color-white: #fff;
+
+// Font Variable
+$font-primary: "Karla", sans-serif;
+
+*::before,
+*::after,
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%; // ((62.5 / 100) * 16px) = 10px
+   box-sizing: border-box;
+}
+
+body {
+   background-color: $color-light-gray;
+   font-family: $font-primary;
+   font-weight: 400;
+   font-size: 1.6rem;
+   line-height: 1.6;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container {
+   max-width: 100%;
+   width: 768px;
+   margin: 0 auto;
+   padding: 15px;
+}
